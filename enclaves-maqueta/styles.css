@@ -1,8 +1,9 @@
 :root {
     --primary: #0F75BC;
     --secondary: #f7f7f7;
-    --violet-1: #cb93f4;
-    --blue-1: #60bde6;
+    --violet: #cb93f4;
+    --blue: #60bde6;
+    --green: #448EBD;
 }
 * {
     padding: 0;
@@ -24,20 +25,13 @@ nav {
     align-items: center;
     display: flex;
     align-items: center;
-    text-align: right;
+    text-align: left;
 }
 header {
     height: auto;
     display: flex;
-    padding: 20px 55px;
+    padding: 0px 55px 20px 55px;
     justify-content: space-around;
-    /*background: rgb(68,142,189);
-background: linear-gradient(-45deg, rgba(68,142,189,1) 46%, rgba(96,189,230,1) 57%, rgba(203,147,244,0.8380602240896359) 93%);
-}*/
-/*
-background: rgb(68,142,189);
-background: linear-gradient(115deg, rgba(68,142,189,1) 22%, rgba(96,189,230,1) 49%, rgba(209,166,244,1) 69%);
-*/
 }
 .logo > img {
     display: block;
@@ -48,13 +42,21 @@ ul {
     list-style-type: none; 
     margin: 0 auto;
 }
-
+a {
+    transition: all 0.5s ease;
+}
+ul a {
+    width: inherit;
+}
+.dropdown-menu {
+    width: 100%;
+}
 ul li {
     display: inline; 
 }
 ul li a {
     display: inline-block; 
-    padding: 10px 20px;
+    /*padding: 10px 20px;*/
     text-decoration: none; 
     color: var(--primary);
     border-bottom: 5px solid transparent;
@@ -65,7 +67,7 @@ ul li a {
     
 
 #nav-wrap-container ul li a:hover{
-    border-bottom: 5px solid var(--primary);
+    border-bottom: 5px solid var(--green);
     
 }
 /* Estilo para el contenedor del menú */
@@ -83,7 +85,7 @@ ul li a {
 /* Estilo para los enlaces del menú */
 #nav-wrap-container ul li a {
     display: block;
-    padding: 10px 20px;
+    padding: 0.6rem 1rem;
     text-decoration: none;
     color: #333;
     line-height: 1.25rem;
@@ -113,6 +115,12 @@ ul li a {
 /* Estilo para el menú desplegable activo */
 #nav-wrap-container .dropdown:hover .dropdown-menu {
     display: block; 
+}
+
+footer {
+    height: 80git0px;
+    background: rgb(15,117,188);
+    background: linear-gradient(45deg, rgba(15,117,188,1) 12%, rgba(68,142,189,1) 39%, rgba(95,181,222,1) 87%);
 }
 
 .container {
@@ -187,5 +195,7 @@ ul li a {
         width: 100%;
         text-align: left;
     }
-    
+    .slides {
+        width: 100%;
+    }
 }
