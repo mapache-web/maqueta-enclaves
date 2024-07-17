@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    menuNavbar();
+    loadNavbar();
 
 })
 
-function menuNavbar() {
+function loadNavbar() {
 
     let iconoMenu = document.getElementById("icono-menu");
     let navbar = document.getElementById("navbar");
@@ -39,11 +39,11 @@ function menuNavbar() {
 
         navbar.style.display = "block";
 
-        cerrarMenu.onclick = function () {
+    }
 
-            navbar.style.display = "none";
+    cerrarMenu.onclick = function () {
 
-        }
+        navbar.style.display = "none";
 
     }
 
