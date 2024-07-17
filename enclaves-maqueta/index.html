@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enclaves</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/37df71a8d3.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,114 +13,124 @@
     <link rel="shortcut icon" href="#">
 </head>
 <body>
-    <div class="wrapper">
-        <header id="header">
-            <div class="logo" id="logo"><img src="./assets/logo-enclaves.png"></div>
-                <nav class="nav-desktop">
-                    <div id="nav-wrap-container">
-                        <ul>
-                            <li>
-                                <a id="home" href="index.html">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="index.html">Quienes somos</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="index.html">Investigación</a>
-                                <ul class="dropdown-menu">
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="index.html">Formación&nbsp; <i class="fa-solid fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                    <li><a href="#">Dipomaturas</a></li>
-                                    <li><a href="#">Cursos</a></li>
-                                    <li><a href="#">Talleres</a></li>
-                                    </ul>
-                            </li>
-                            <li class="dropdown">
-                            <a href="index.html">Novedades</a>
-                            <ul class="dropdown-menu"></ul>
-                            </li>
-                            <li>
-                            <a href="#contacto">Contacto</a>
-                            </li>
-                            <li>
-                                <search class="search">
-                                <form>
+<div id="wrapper" class="wrapper">
+    <header id="header">
+        <div class="logo" id="logo"><img src="./assets/logo-enclaves.png"></div>
+        <div id="icono-menu" class="icono-menu">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+        <nav class="nav-desktop" id="navbar">
+            <div id="nav-wrap-container">
+                <div id="cerrar-menu" class="icono-cerrar-menu">
+                    <i class="fa-solid fa-x fa-2xl"></i>
+                </div>
+                <ul>
+                    <li>
+                        <a id="home" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Quienes somos</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="index.html">Investigación</a>
+                        <ul class="dropdown-menu">
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="index.html">Formación&nbsp; <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dipomaturas</a></li>
+                            <li><a href="#">Cursos</a></li>
+                            <li><a href="#">Talleres</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="index.html">Novedades</a>
+                        <ul class="dropdown-menu"></ul>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                    <li>
+                        <search class="search">
+                            <form>
                                 <input name="fsrch" id="fsrch" placeholder="Search">
                                 <span></span>
-                                </form>
-                                </search>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>    
-        </header>
-    
-        <div id="slide">
+                            </form>
+                        </search>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="slide">
         <ul>
-        <li>
-        <input type="radio" id="boton-1" name="in">
-        <label for="boton-1"></label>
-        <img src="./assets/slide-1.png" width="100%" id="foto01">
-        </li>
-        
-        <li>
-        <input type="radio" id="boton-2" name="in">
-        <label for="boton-2"></label>
-        <img src="./assets/slide-2.png" width="100%"  id="foto02">
-        </li>
-        
-        <li>
-        <input type="radio" id="boton-3" name="in">
-        <label for="boton-3"></label>
-        <img src="./assets/slide-3.png" width="100%"  id="foto03">
-        </li>
+            <li>
+                <input type="radio" id="boton-1" name="in">
+                <label for="boton-1"></label>
+                <img src="./assets/slide-1.png" width="100%" id="foto01">
+            </li>
+
+            <li>
+                <input type="radio" id="boton-2" name="in">
+                <label for="boton-2"></label>
+                <img src="./assets/slide-2.png" width="100%" id="foto02">
+            </li>
+
+            <li>
+                <input type="radio" id="boton-3" name="in">
+                <label for="boton-3"></label>
+                <img src="./assets/slide-3.png" width="100%" id="foto03">
+            </li>
         </ul>
         <button class="prev-slide">◄</button>
         <button class="next-slide">►</button>
-         </div>
+    </div>
 
-        <div class="container">
+    <div class="container">
         <div class="card main-post">
-            <img src="https://soberaniasanitaria.org.ar/wp-content/uploads/2024/06/Narratively-01-1320x500.jpg" alt="Imagen principal">
-                <div class="card-content">
+            <img src="https://soberaniasanitaria.org.ar/wp-content/uploads/2024/06/Narratively-01-1320x500.jpg"
+                 alt="Imagen principal">
+            <div class="card-content">
                 <p class="card-subtitle">Subtítulo aquí <span class="card-date">Fecha: 1 de julio, 2024</span></p>
                 <h2 class="card-title">Título del post principal</h2>
                 <p>Lorem ipsum dolor sit amet
-                    
+
                 </p>
-                </div>
+            </div>
         </div>
         <div class="card">
-        <img src="https://soberaniasanitaria.org.ar/wp-content/uploads/2024/06/Pulling-Together-01-1320x500.jpg" alt="Imagen del post 2">
-        <div class="card-content">
-            <p class="card-subtitle">Subtítulo aquí <span class="card-date">Fecha: 2 de julio, 2024</span></p>
-            <h2 class="card-title">Título del post 2</h2>
-            <p>Lorem ipsum dolor sit amet
+            <img src="https://soberaniasanitaria.org.ar/wp-content/uploads/2024/06/Pulling-Together-01-1320x500.jpg"
+                 alt="Imagen del post 2">
+            <div class="card-content">
+                <p class="card-subtitle">Subtítulo aquí <span class="card-date">Fecha: 2 de julio, 2024</span></p>
+                <h2 class="card-title">Título del post 2</h2>
+                <p>Lorem ipsum dolor sit amet
 
-            </p>
-        </div>
+                </p>
+            </div>
         </div>
 
         <div class="card">
-        <img src="https://soberaniasanitaria.org.ar/wp-content/uploads/2024/06/Narratively-01-1320x500.jpg" alt="Imagen del post 3">
-        <div class="card-content">
-            <p class="card-subtitle">Subtítulo aquí <span class="card-date">Fecha: 3 de julio, 2024</span></p>
-            <h2 class="card-title">Título del post 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </div>
+            <img src="https://soberaniasanitaria.org.ar/wp-content/uploads/2024/06/Narratively-01-1320x500.jpg"
+                 alt="Imagen del post 3">
+            <div class="card-content">
+                <p class="card-subtitle">Subtítulo aquí <span class="card-date">Fecha: 3 de julio, 2024</span></p>
+                <h2 class="card-title">Título del post 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
         </div>
         <div class="card">
-        <img src="https://soberaniasanitaria.org.ar/wp-content/uploads/2024/06/A-rejected-one-about.-Mental-Health.-Lorenzo-Gritti-01-01-1320x500.jpg" alt="Imagen del post 3">
-        <div class="card-content">
-            <p class="card-subtitle">Subtítulo aquí <span class="card-date">Fecha: 3 de julio, 2024</span></p>
-            <h2 class="card-title">Título del post 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <img src="https://soberaniasanitaria.org.ar/wp-content/uploads/2024/06/A-rejected-one-about.-Mental-Health.-Lorenzo-Gritti-01-01-1320x500.jpg"
+                 alt="Imagen del post 3">
+            <div class="card-content">
+                <p class="card-subtitle">Subtítulo aquí <span class="card-date">Fecha: 3 de julio, 2024</span></p>
+                <h2 class="card-title">Título del post 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
         </div>
-        </div>
-</div>
+    </div>
 </div>
 <!--
 <section class="media-section"> 
@@ -130,14 +141,14 @@
  
 </section>-->
 <footer>
-        <div class="footer-inner"></div>
-    
+    <div class="footer-inner"></div>
+
     <div id="social-media">
         <a href="https://www.facebook.com/EnclavesAC/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
         <a href="https://www.instagram.com/enclaves_ac/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
         <a href="https://www.youtube.com/@enclaves_ac"><i class="fa-brands fa-youtube"></i></a>
     </div>
 </footer>
- 
+<script src="script.js"></script>
 </body>
 </html>
