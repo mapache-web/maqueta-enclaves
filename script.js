@@ -13,6 +13,28 @@ function navbarResponsive() {
     let cerrarMenu = document.getElementById("cerrar-menu");
     let wrapper = document.getElementById("wrapper");
     let header = document.getElementById("header");
+    let itemsNavbar = document.getElementsByClassName("navLink")
+
+    function cerrarNavbar(){
+        navbar.style.display = "none";
+    }
+    function abrirNavbar(){
+        navbar.style.display = "block";
+    }
+
+    function eventosBotonesMobile(){
+        for (const item of itemsNavbar) {
+            item.onclick = cerrarNavbar;
+        }
+    }
+
+    function eventosBotonesDesktop(){
+        for (const item of itemsNavbar) {
+            item.onclick = (e) => {
+                e.preventDefault();
+            }
+        }
+    }
     
     function definirEstilos() {
         if (window.innerWidth > 768) {
@@ -24,6 +46,8 @@ function navbarResponsive() {
             header.appendChild(navbar);
             navbar.style.display = "flex";
             navbar.className = "navbar-desktop";
+
+            eventosBotonesDesktop();
         }
     
         if (window.innerWidth < 768) {
@@ -33,6 +57,8 @@ function navbarResponsive() {
             }
             navbar.style.display = "none";
             navbar.className = "navbar-mobile";
+
+            eventosBotonesMobile();
         }
     }
 
@@ -40,11 +66,7 @@ function navbarResponsive() {
 
     window.onresize = definirEstilos;
 
-    iconoMenu.onclick = function () {
-        navbar.style.display = "block";
-    }
+    iconoMenu.onclick = abrirNavbar;
 
-    cerrarMenu.onclick = function () {
-        navbar.style.display = "none";
-    }
+    cerrarMenu.onclick = cerrarNavbar;
 }
