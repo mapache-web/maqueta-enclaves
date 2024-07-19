@@ -142,7 +142,7 @@ ul li a {
 /* Estilo para el menú desplegable */
 #nav-wrap-container .dropdown-menu {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: transparent;
     z-index: 13;
 }
