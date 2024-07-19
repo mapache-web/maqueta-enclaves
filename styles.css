@@ -18,17 +18,34 @@ body {
     height: 100vh;
 }
 
-header {
-    height: auto;
-    display: flex;
-    padding: 0px 55px 20px 55px;
+.header {
+    position: fixed;
+    overflow: hidden;
+    z-index: 10;
     top: 0;
+    padding: 0;
+    transition: .5s;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: white;
     justify-content: space-around;
+}
+
+.header-on-top{
+    height: auto;
+}
+
+.header-on-scroll{
+    height: 66px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .logo > img {
     display: block;
     max-height: 150px;
+    transition: .5s;
 }
 
 .navbar-desktop {
@@ -48,6 +65,7 @@ header {
     padding-top: 5em;
     height: 100vh;
     min-width: 50%;
+    z-index: 12;
 }
 
 .icono-menu {
@@ -84,7 +102,6 @@ ul li a {
     padding: 5px;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
-    color: #1d3030;
 }
 
 #navbar-mobile {
@@ -127,14 +144,14 @@ ul li a {
     display: none;
     position: absolute;
     background-color: transparent;
-    z-index: 2;
+    z-index: 13;
 }
 
 /* Estilo para los elementos del menú desplegable */
 #nav-wrap-container .dropdown-menu li {
     display: block;
     background-color: var(--secondary);
-    border: 0px solid transparent;
+    border: 0 solid transparent;
 }
 
 /* Estilo para los enlaces del menú desplegable */
@@ -150,11 +167,10 @@ ul li a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    color: var(--gray);
     border: 3px solid transparent;
     background-color: var(--primary);
     color: var(--secondary);
-    border-radius: 0px;
+    border-radius: 0;
     z-index: 2;
 }
 
@@ -174,6 +190,7 @@ ul li a {
 
 .search-mobile {
     display: none;
+    float: right;
 }
 
 /*#nav-wrap-container .dropdown:after {
@@ -192,9 +209,10 @@ ul li a {
     position: relative;
     width: 100%;
     height: 400px;
-    margin: auto;
+    transition: .5s;
     overflow: hidden;
     margin-bottom: 5rem;
+    margin-top: 170px;
 }
 
 #slide ul {
@@ -210,7 +228,8 @@ ul li a {
 }
 
 #slide ul li img {
-    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
     opacity: 0;
     left: 0;
     transition: opacity 1s ease-out;
@@ -385,7 +404,6 @@ footer {
     justify-content: space-between;
     width: 300px;
     float: right;
-    padding: 10px;
 }
 
 #social-media .fa-brands {
@@ -401,17 +419,15 @@ footer {
 /*-----------------------      RESPONSIVE STYLES     -----------------------*/
 
 @media only screen  and (max-width: 800px) {
-    header {
-        display: flex;
-        width: 100%;
+    .header {
         justify-content: space-between;
-        align-items: center;
         padding: 0;
         padding-right: 2em;
     }
 
     .logo > img {
         display: block;
+        max-height: 100px;
     }
 
     .search {
