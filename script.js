@@ -50,7 +50,7 @@ function navbarResponsive() {
 
     function onscrollStyles(){
         header.className = isScrolled() ? "header header-on-scroll" : "header header-on-top";
-        navbarImg.style.maxHeight = isScrolled() ? "66px" : "170px";
+        navbarImg.style.maxHeight = isScrolled() ? "56px" : "170px";
     }
 
     function responsiveStyles() {
