@@ -202,6 +202,10 @@ ul li a {
 .fa-x:before {
     color: var(--secondary);
 }
+/* icono lupa buscador */
+.fa-magnifying-glass:before {
+    color: gray;
+}
 .search-mobile {
     display: none;
     float: right;
@@ -597,7 +601,7 @@ input{
     #nav-wrap-container ul li:hover {
         text-align: left;
         display: block;
-        background-color: var(--secondary);
+        background-color: var(--blue);
     }
 
     #nav-wrap-container ul li a {
@@ -611,7 +615,9 @@ input{
         filter: drop-shadow(0px 0px 0.3px rgba(41, 37, 37, 0.563));
         transition: filter 0.2s ease-in;
     }
-
+    #nav-wrap-container .dropdown-menu {
+        position: unset;
+    }
     .icono-menu {
         display: inline;
     }
