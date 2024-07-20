@@ -209,7 +209,6 @@ ul li a {
     display: none;
     float: right;
 }
-
 /*#nav-wrap-container .dropdown:after {
     content: '           >'; 
     font-family: 'FontAwesome';
@@ -625,6 +624,9 @@ input{
         top: 0;
         right: 0;
         padding: 2em;
+    }
+    #nav-wrap-container .dropdown-menu {
+        position: unset;
     }
 
     #slide {
