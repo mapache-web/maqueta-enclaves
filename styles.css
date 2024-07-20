@@ -5,6 +5,14 @@
     --blue: #60bde6;
     --green: #448EBD;
     --gray: #939598;
+    --webkit-box-sizing:border-box;
+    --moz-box-sizing:border-box;
+    --webkit-font-smoothing:antialiased;
+    --moz-font-smoothing:antialiased;
+    --o-font-smoothing:antialiased;
+    --font-smoothing:antialiased;
+    --text-rendering:optimizeLegibility;
+    --fuente-titulos:"Asap", sans-serif;
 }
 
 * {
@@ -32,11 +40,11 @@ body {
     justify-content: space-around;
 }
 
-.header-on-top{
+.header-on-top {
     height: auto;
 }
 
-.header-on-scroll{
+.header-on-scroll {
     height: 56px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -53,11 +61,14 @@ body {
     align-items: center;
     display: flex;
     text-align: left;
-    font-family: "Asap", sans-serif;
+    font-family: var(--fuente-titulos);
     font-optical-sizing: auto;
 }
 
 .navbar-mobile {
+    text-align: left;
+    font-family: var(--fuente-titulos);
+    font-optical-sizing: auto;
     display: none;
     background-color: var(--primary);
     position: fixed;
@@ -132,7 +143,7 @@ ul li a {
 }
 
 #nav-wrap-container ul li a:hover {
-    border: 3px solid transparent /*var(--green)*/;
+    border: 3px solid transparent;
     border-radius: 30px;
     color: var(--primary);
     margin-right: 0px;
@@ -415,6 +426,128 @@ footer {
 
 #social-media .fa-brands:hover {
     opacity: 0.95;
+}
+
+/* Estilos para seccion de contacto */
+
+.seccion-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+.contacto-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto-titulo{
+    text-align: left;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 1em;
+    font-family: var(--fuente-titulos);
+}
+
+.contacto-mail,
+.contacto-formulario{
+    display: block;
+    width: 40%;
+}
+
+.contacto-formulario-titulo {
+    color: var(--violet);
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--fuente-titulos);
+}
+
+.contacto-formulario-subtitulo {
+    margin:5px 0 15px;
+    display:block;
+    font-size:13px;
+}
+
+.contacto-formulario-campo {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.contacto-formulario-campo input,
+.contacto-formulario-campo textarea {
+    width:100%;
+    border:1px solid #CCC;
+    background:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+}
+
+textarea,
+input{
+    font-family: var(--fuente-titulos);
+}
+
+.contacto-formulario-campo input:hover,
+.contacto-formulario-campo textarea:hover {
+    -webkit-transition:border-color 0.3s ease-in-out;
+    -moz-transition:border-color 0.3s ease-in-out;
+    transition:border-color 0.3s ease-in-out;
+    border:1px solid #AAA;
+}
+
+.contacto-formulario-campo textarea {
+    height:100px;
+    max-width:100%;
+    resize:none;
+}
+
+.contacto-formulario-campo button {
+    cursor:pointer;
+    width:100%;
+    border:none;
+    background:var(--primary);
+    color:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    font-size:15px;
+}
+
+.contacto-formulario-campo button:hover {
+    background:#09C;
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+}
+
+.contacto-formulario-campo button:active {
+    box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contacto-formulario-campo input:focus,
+.contacto-formulario-campo textarea:focus {
+    outline:0;
+    border:1px solid #999;
+}
+
+
+::-webkit-input-placeholder {
+    color:#888;
+}
+:-moz-placeholder {
+    color:#888;
+}
+::-moz-placeholder {
+    color:#888;
+}
+:-ms-input-placeholder {
+    color:#888;
 }
 
 /*-----------------------      RESPONSIVE STYLES     -----------------------*/
