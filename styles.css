@@ -628,4 +628,14 @@ input{
         display: block;
         padding: 30px;
     }
+    .contacto-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto-mail {
+        width: 100%;
+    }
+    .contacto-formulario {
+        width: 100%;
+    }
 }
