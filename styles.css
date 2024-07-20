@@ -603,7 +603,6 @@ input{
         display: block;
         background-color: var(--blue);
     }
-
     #nav-wrap-container ul li a {
         color: var(--secondary);
         padding-right: 0;
