@@ -452,7 +452,7 @@ footer {
 .contacto-titulo{
     text-align: left;
     width: 100%;
-    font-size: 40px;
+    font-size: 1.3rem;
     font-weight: 600;
     padding-bottom: 2rem;
     font-family: var(--fuente-titulos);
