@@ -40,17 +40,6 @@ body {
     justify-content: space-around;
 }
 
-.header-on-top {
-    height: auto;
-}
-
-.header-on-scroll {
-    height: 56px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    box-shadow: 2px 2px 10px gray;
-}
-
 .logo > img {
     display: block;
     max-height: 150px;

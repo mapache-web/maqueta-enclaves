@@ -44,13 +44,9 @@ function navbarResponsive() {
         menuFormacion.style.display = menuFormacion.style.display === 'block' ? 'none' : 'block';
     }
 
-    function isScrolled(){
-        return window.scrollY > 5;
-    }
-
     function onscrollStyles(){
-        header.className = isScrolled() ? "header header-on-scroll" : "header header-on-top";
-        navbarImg.style.maxHeight = isScrolled() ? "56px" : "170px";
+        navbarImg.style.maxHeight = window.scrollY > 80 ? "56px" : "170px";
+        header.style.boxShadow = window.scrollY > 120 ? "2px 2px 10px gray" : "none";
     }
 
     function responsiveStyles() {
