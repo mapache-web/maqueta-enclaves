@@ -722,6 +722,9 @@ aside {
     .contacto-formulario {
         width: 100%;
     }
+    .quienes-somos {
+        height: auto;
+    }
 }
 
 
