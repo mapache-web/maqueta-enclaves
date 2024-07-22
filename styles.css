@@ -24,6 +24,8 @@
 body {
     width: 100%;
     height: 100vh;
+    scroll-behavior: smooth; /* Ensure smooth scrolling */
+    overflow-y: auto; /* Enable scrolling if needed */
 }
 
 .header {
@@ -210,7 +212,8 @@ ul li a {
 /*--SLIDE--*/
 #slide {
     position: relative;
-    width: 100%;
+    width: 1400px;
+    margin: auto;
     height: 400px;
     transition: .5s;
     overflow: hidden;
@@ -221,18 +224,20 @@ ul li a {
     position: relative;
     top: 0;
     left: 0;
-    height: 100%;
-    width: auto;
+    height: inherit;
+    width: 1400px;
     background: url(./assets/slide-3.png);
     margin: auto;
     filter: drop-shadow(16px 16px 20px rgba(100, 100, 100, 0.155));
     z-index: inherit;
 }
-
+#slide ul li {
+    display: none;
+}
 #slide ul li img {
     width: auto;
     height: 100%;
-    margin: auto;
+    margin: 0;
     opacity: 0;
     left: 0;
     transition: opacity 1s ease-out;
@@ -296,8 +301,8 @@ input[type="radio"] {
     width: 100%;
     text-align: center;
     z-index: 10;
-}
-*/
+}*/
+
 .prev-slide, .next-slide {
     position: absolute;
     top: 50%;
@@ -582,7 +587,50 @@ input{
 .contacto-email-link:hover{
     color: var(--green);
 }
+/*estilo general de las paginas no index*/
 
+.hero-sidepage {
+    padding-top: 200px;
+}
+
+
+/* QUIENES SOMOS */
+.quienes-somos {
+    width: 90%;
+    margin: auto;
+    height: 1000px;
+    font-size: 1.1rem;
+}
+article {
+    margin: 1rem;
+}
+article > div > h3 {
+    text-align-last: left;
+    padding: 1rem 0rem;
+}
+article > div > p {
+    padding: 0.7rem 0px;
+    line-height: 1.6;
+}
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin: 1rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+  }
+  
+  aside > p {
+    margin: 0.5rem;
+    padding: 1rem;
+    line-height: 2;
+  }
+  
+
+  
 /*-----------------------      RESPONSIVE STYLES     -----------------------*/
 
 @media only screen  and (max-width: 800px) {
@@ -675,3 +723,5 @@ input{
         width: 100%;
     }
 }
+
+

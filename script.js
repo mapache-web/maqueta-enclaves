@@ -85,3 +85,4 @@ function navbarResponsive() {
 
     cerrarMenu.onclick = cerrarNavbar;
 }
+
