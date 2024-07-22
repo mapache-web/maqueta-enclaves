@@ -40,6 +40,7 @@ body {
     align-items: center;
     background-color: white;
     justify-content: space-around;
+    opacity: 0.98;
 }
 
 .logo > img {
@@ -198,6 +199,90 @@ ul li a {
     float: right;
 }
 
+
+/* NEW SLIDE */
+.slideshow-container {
+    position: relative;
+    width: 1400px;
+    margin: auto;
+    height: 400px;
+    transition: .5s;
+    overflow: hidden;
+    margin-top: 170px;
+  }
+  .slideshow-container ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 1400px;
+    background: url(./assets/slide-3.png);
+    margin: auto;
+    filter: drop-shadow(16px 16px 20px rgba(100, 100, 100, 0.155));
+    z-index: inherit;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: rgba(199, 199, 199, 0.423);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
 /*#nav-wrap-container .dropdown:after {
     content: '           >'; 
     font-family: 'FontAwesome';
@@ -210,6 +295,7 @@ ul li a {
 
 
 /*--SLIDE--*/
+/*
 #slide {
     position: relative;
     width: 1400px;
@@ -301,7 +387,7 @@ input[type="radio"] {
     width: 100%;
     text-align: center;
     z-index: 10;
-}*/
+}
 
 .prev-slide, .next-slide {
     position: absolute;
@@ -322,6 +408,9 @@ input[type="radio"] {
 .next-slide {
     right: 10px;
 }
+*/
+/* NUEVO SLIDE */
+
 
 .container {
     margin: 0 auto;
@@ -693,7 +782,7 @@ aside {
         right: 0;
         padding: 2em;
     }
-
+/*
     #slide {
         width: 100%;
     }
@@ -701,7 +790,7 @@ aside {
     #slide ul li img {
         transform: translate(-7%);
     }
-
+*/
     .card {
         margin: 2rem 0;
 
@@ -727,4 +816,14 @@ aside {
     }
 }
 
-
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+    
+  }

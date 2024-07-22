@@ -63,6 +63,65 @@
             </div>
         </nav>
     </header>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./assets/slide-1.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./assets/slide-2.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="./assets/slide-3.png" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+    <script>
+        
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+    <!--
     <div id="slide">
         <ul>
             <li>
@@ -88,7 +147,7 @@
         <button class="next-slide">►</button>
         </div>
     </div>
-
+-->
     <div class="container">
         <div class="card main-post">
             <img src="https://soberaniasanitaria.org.ar/wp-content/uploads/2024/06/Narratively-01-1320x500.jpg"
@@ -133,14 +192,15 @@
         </div>
     </div>
 </div>
-<!--
+
 <section class="media-section"> 
 <div class="media-container">
     <div class="other-media"></div>
     <div class="other-media"></div>
 </div> 
- 
-</section>-->
+
+
+
 <div id="contacto" class="seccion-contacto">
     <div class="contacto-container">
         <div class="contacto-mail">
