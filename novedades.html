@@ -3,69 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novedades</title>
+    <title>Enclaves</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/37df71a8d3.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="#">
 </head>
 <body>
-    <div class="wrapper">
-    <header id="header">
+<div id="wrapper" class="wrapper">
+    <header class="header" id="header">
         <div class="logo" id="logo"><img src="./assets/logo-enclaves.png"></div>
-            <nav>
-                <div id="nav-wrap-container">
-                    <ul>
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="quienes-somos.html">Quienes somos</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="investigacion.html">Investigación</a>
-                            <ul class="dropdown-menu">
-                                <!--<li><a href="#">Curso 1</a></li>
-                                <li><a href="#">Curso 2</a></li>
-                                <li><a href="#">Curso 3</a></li>-->
-                            </ul>
-                            </li>
-                        <li class="dropdown">
-                            <a href="formacion.html">Formación</a>
-                            <ul class="dropdown-menu">
-                            <li><a href="#">Dipomaturas</a></li>
-                            <li><a href="#">Cursos</a></li>
-                            <li><a href="#">Talleres</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="novedades.html">Novedades</a>
-                            <ul class="dropdown-menu">
-                                
-                            </ul>
-                        </li>
+        <div id="icono-menu" class="icono-menu">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+        <nav id="navbar">
+            <div id="nav-wrap-container">
+                <div id="cerrar-menu" class="icono-cerrar-menu">
+                    <i class="fa-solid fa-x fa-2xl"></i>
+                </div>
+                <ul>
                     <li>
-                        <a href="#contacto">Contacto</a>
-    
+                        <a class="nav-link" id="home" href="index.html">Inicio</a>
                     </li>
                     <li>
-                        <search>
+                        <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="investigacion.html">Investigación</a>
+                        <ul class="dropdown-menu">
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="link-formacion" href="formacion.html">Formación&nbsp; <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu menu-formacion">
+                            <li><a class="nav-link" href="javascript:void(0)">Dipomaturas</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)">Cursos</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)">Talleres</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="novedades.html">Novedades</a>
+                        <ul class="dropdown-menu"></ul>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li>
+                        <search class="search">
                             <form>
-                            <input name="fsrch" id="fsrch" placeholder="Search">
-                            <span></span>
+                                <input name="fsrch" id="fsrch" placeholder="Search">
+                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
                             </form>
-                    </search>
+                        </search>
                     </li>
                 </ul>
             </div>
-            </nav>    
+        </nav>
     </header>
-<footer class="contacto" id="contacto">
-    <section>
-        <div class="footer-inner"></div>
-    </section>
+
+<div class="seccion-contacto">
+    <div class="contacto-container">
+        <div class="contacto-mail">
+            <div class="contacto-titulo">
+                <h3>Contacto</h3>
+            </div>
+            <p>
+                Si sentís afinidad con nuestras ideas y propuestas, te gustaría participar y aportar al
+                debate o tan sólo querés estar conectado y recibir información sobre nuestras actividades
+                escribinos a <a href="mailto:webmaster@example.com">xxxx@enclaves.org.ar </a>
+            </p>
+            <br>
+            <div class="contacto-email-link">
+                <a href="mailto:webmaster@example.com">
+                    <p>
+                        <i class="fa-solid fa-envelope fa-2xl"></i>
+                        &nbsp;
+                        Escribinos un email
+                    </p>
+                </a>
+            </div>
+        </div>
+        <form class="contacto-formulario">
+            <form id="contact" action="" method="post">
+                <h3 class="contacto-formulario-titulo">Escribinos un mensaje</h3>
+                <h4 class="contacto-formulario-subtitulo">te responderemos lo antes posible!</h4>
+                <fieldset class="contacto-formulario-campo">
+                    <input name="name" placeholder="Tu nombre" type="text" tabindex="1" required autofocus autocomplete="name">
+                </fieldset>
+                <fieldset class="contacto-formulario-campo">
+                    <input name="email" placeholder="Tu direcci&oacute;n de correo electr&oacute;nico" type="email" tabindex="2" required autocomplete="email">
+                </fieldset>
+                <fieldset class="contacto-formulario-campo">
+                    <textarea name="message" placeholder="Escriba aqu&iacute; su mensaje...." tabindex="3" required></textarea>
+                </fieldset>
+                <fieldset class="contacto-formulario-campo">
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Enviando">
+                        Enviar
+                    </button>
+                </fieldset>
+            </form>
+        </form>
+    </div>
+    <div class="contacto-seccion-ubicacion">
+
+    </div>
+</div>
+<footer>
+    <div class="footer-inner">
+    </div>
+    <div id="social-media">
+        <a href="https://www.facebook.com/EnclavesAC/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/enclaves_ac/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.youtube.com/@enclaves_ac"><i class="fa-brands fa-youtube"></i></a>
+    </div>
 </footer>
- 
+<script src="script.js"></script>
 </body>
 </html>
