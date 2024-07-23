@@ -672,7 +672,6 @@ aside {
 
     .container {
         grid-template-columns: 1fr;
-        padding: 20px;
         grid-gap: 0px;
     }
     .contacto-container {
