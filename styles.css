@@ -703,6 +703,10 @@ aside {
     .mobile-only {
         width: 100%!important;
     }
+    aside {
+        width: 100%;
+        float: none;
+    }
 }
 
   
