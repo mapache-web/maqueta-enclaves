@@ -283,134 +283,6 @@ ul li a {
     animation-name: fade;
     animation-duration: 1.5s;
   }
-/*#nav-wrap-container .dropdown:after {
-    content: '           >'; 
-    font-family: 'FontAwesome';
-    font-size: 12px;
-    position: absolute;
-    right: 10px; 
-    top: 50%;
-    transform: translateY(-50%);
-  }*/
-
-
-/*--SLIDE--*/
-/*
-#slide {
-    position: relative;
-    width: 1400px;
-    margin: auto;
-    height: 400px;
-    transition: .5s;
-    overflow: hidden;
-    margin-top: 170px;
-}
-
-#slide ul {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: inherit;
-    width: 1400px;
-    background: url(./assets/slide-3.png);
-    margin: auto;
-    filter: drop-shadow(16px 16px 20px rgba(100, 100, 100, 0.155));
-    z-index: inherit;
-}
-#slide ul li {
-    display: none;
-}
-#slide ul li img {
-    width: auto;
-    height: 100%;
-    margin: 0;
-    opacity: 0;
-    left: 0;
-    transition: opacity 1s ease-out;
-    filter: contrast(80%);
-    filter: blur(0.5px);
-}
-
-#slide ul li label {
-    position: relative;
-    z-index: 3;
-    top: 370px;
-    justify-content: center;
-    left: 650px;
-    float: left;
-    width: 12px;
-    height: 12px;
-    margin: 0 5px;
-    background: var(--secondary);
-    border: 3px solid #ffffff03;;
-    cursor: pointer;
-    border-radius: 100%;
-}
-
-#slide ul li label:hover {
-    background: var(--primary);
-}
-
-#slide ul li label:active {
-    background: var(--secondary);
-}
-
-#slide ul li input {
-    display: none;
-}
-
-#slide ul li input#boton-1:checked ~ #foto01 {
-    opacity: 1;
-}
-
-#slide ul li input#boton-2:checked ~ #foto02 {
-    opacity: 1;
-}
-
-#slide ul li input#boton-3:checked ~ #foto03 {
-    opacity: 1;
-}
-
-#slide ul li input#boton-4:checked ~ #foto04 {
-    opacity: 1;
-}
-
-#slide ul li input#boton-5:checked ~ #foto05 {
-    opacity: 1;
-}
-
-/*
-input[type="radio"] {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 10;
-}
-
-.prev-slide, .next-slide {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(199, 199, 199, 0.423);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1;
-}
-
-.prev-slide {
-    left: 10px;
-}
-
-.next-slide {
-    right: 10px;
-}
-*/
-/* NUEVO SLIDE */
-
 
 .container {
     margin: 0 auto;
@@ -797,8 +669,8 @@ aside {
     }
 
     .container {
-        display: block;
-        padding: 30px;
+        grid-template-columns: 1fr;
+        padding: 20px;
     }
     .contacto-container {
         display: flex;
@@ -813,6 +685,20 @@ aside {
     }
     .quienes-somos {
         height: auto;
+    }
+    .slideshow-container {
+        min-width: -webkit-fill-available;
+        width: auto;
+        height: auto;
+    }
+    .wrapper {
+        width: auto;
+    }
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        width: 100%!important;
     }
 }
 

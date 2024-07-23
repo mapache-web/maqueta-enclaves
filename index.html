@@ -16,9 +16,9 @@
 <div id="wrapper" class="wrapper">
     <header class="header" id="header">
         <div class="logo" id="logo"><img src="./assets/logo-enclaves.png"></div>
-        <div id="icono-menu" class="icono-menu">
-            <i class="fa-solid fa-bars fa-2xl"></i>
-        </div>
+            <div id="icono-menu" class="icono-menu">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
         <nav id="navbar">
             <div id="nav-wrap-container">
                 <div id="cerrar-menu" class="icono-cerrar-menu">
@@ -63,37 +63,35 @@
             </div>
         </nav>
     </header>
-    <div class="slideshow-container">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+            <img class="desktop-only" src="./assets/slide-1.png" style="width:100%">
+            <img class="mobile-only" src="./assets/slide-1-m.png" style="width:100%">
+            </div>
 
-        <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img src="./assets/slide-1.png" style="width:100%">
+            <div class="mySlides fade">
+            <img class="desktop-only" src="./assets/slide-2.png" style="width:100%">
+            <img class="mobile-only" src="./assets/slide-2-m.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <img class="desktop-only" src="./assets/slide-3.png" style="width:100%">
+            <img class="mobile-only" src="./assets/slide-3-m.png" style="width:100%">
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        
+            </div>
+            <br>
+        
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
         </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img src="./assets/slide-2.png" style="width:100%">
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img src="./assets/slide-3.png" style="width:100%">
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-    </div>
-    <script>
-        
+<script>  
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -120,34 +118,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-    </script>
-    <!--
-    <div id="slide">
-        <ul>
-            <li>
-                <input type="radio" id="boton-1" name="in">
-                <label for="boton-1"></label>
-                <img src="./assets/slide-1.png" width="100%" id="foto01">
-            </li>
-
-            <li>
-                <input type="radio" id="boton-2" name="in">
-                <label for="boton-2"></label>
-                <img src="./assets/slide-2.png" width="100%" id="foto02">
-            </li>
-
-            <li>
-                <input type="radio" id="boton-3" name="in">
-                <label for="boton-3"></label>
-                <img src="./assets/slide-3.png" width="100%" id="foto03">
-            </li>
-        </ul>
-        <div class="slide-arrows">
-        <button class="prev-slide">◄</button>
-        <button class="next-slide">►</button>
-        </div>
-    </div>
--->
+</script> 
     <div class="container">
         <div class="card main-post">
             <img src="https://soberaniasanitaria.org.ar/wp-content/uploads/2024/06/Narratively-01-1320x500.jpg"
@@ -198,8 +169,6 @@ function showSlides(n) {
     <div class="other-media"></div>
     <div class="other-media"></div>
 </div> 
-
-
 
 <div id="contacto" class="seccion-contacto">
     <div class="contacto-container">
