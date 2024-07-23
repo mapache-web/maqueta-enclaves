@@ -291,7 +291,7 @@ ul li a {
     grid-template-columns: 1fr 1fr;
     width: 100%;
     background-color: var(--secondary);
-    padding: 70px;
+    padding: 1rem 1.5rem;
     box-shadow: 0 2px 2px rgba(95, 94, 94, 0.026) inset;
 }
 
