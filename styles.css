@@ -48,7 +48,6 @@ body {
     max-height: 150px;
     transition: .5s;
 }
-
 .navbar-desktop {
     align-items: center;
     display: flex;
@@ -291,7 +290,7 @@ ul li a {
     grid-template-columns: 1fr 1fr;
     width: 100%;
     background-color: var(--secondary);
-    padding: 1rem 1.5rem;
+    padding: 4rem 1.5rem;
     box-shadow: 0 2px 2px rgba(95, 94, 94, 0.026) inset;
 }
 
@@ -346,11 +345,11 @@ ul li a {
 }
 
 .media-container {
-    margin: 5%;
     display: flex;
     justify-content: space-between;
     height: fit-content;
     padding: 5%;
+    margin: 0px 3rem;
 }
 
 .other-media {
@@ -396,7 +395,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 4em;
-    box-shadow: 1px 0.5px 2px gray inset;
+    box-shadow: 0px 0.8px 0px var(--gray) inset;
 }
 
 .contacto-container{
@@ -591,8 +590,6 @@ aside {
     padding: 1rem;
     line-height: 2;
   }
-  
-
   
 /*-----------------------      RESPONSIVE STYLES     -----------------------*/
 
