@@ -707,6 +707,13 @@ aside {
         margin: 0;
         padding: 0.5rem;
     }
+    .media-section {
+        max-width: 100%;
+    }
+    .media-container {
+        padding: 0;
+        margin: 0;
+    }
 }
 
   
