@@ -708,7 +708,7 @@ aside {
         padding: 0.5rem;
     }
     .media-section {
-        max-width: 100%;
+        display: none;
     }
     .media-container {
         padding: 0;
