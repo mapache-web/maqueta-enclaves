@@ -395,7 +395,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 4em;
-    box-shadow: 0px 0.8px 0px var(--gray) inset;
+    box-shadow: 0px 0.8px 5px #c7ced8 inset;
 }
 
 .contacto-container{
@@ -556,38 +556,36 @@ input{
 
 /* QUIENES SOMOS */
 .quienes-somos {
-    width: 90%;
+    width: 75%;
     margin: auto;
-    height: 1000px;
+    height: auto;
     font-size: 1.1rem;
 }
 article {
-    margin: 1rem;
+    margin: 0.5rem 1rem;
+    padding-bottom: 2rem;
 }
 article > div > h3 {
     text-align-last: left;
     padding: 1rem 0rem;
+    font-size: 1.4rem;
 }
 article > div > p {
     padding: 0.7rem 0px;
     line-height: 1.6;
-
-    font-size: 1rem;
+    font-size: 1.125rem;
 }
+
 aside {
-    width: 40%;
     padding-left: 0.5rem;
     margin: 1rem;
     margin-left: 0.5rem;
-    float: right;
-    box-shadow: inset 5px 0 5px -5px #29627e;
-    font-style: italic;
-    color: #29627e;
+    box-shadow: inset 5px 0 5px -5px var(--green), inset -5px 0 5px -5px var(--green);
   }
   
   aside > p {
     margin: 0.5rem;
-    padding: 1rem;
+    padding: 0px 3rem;
     line-height: 2;
   }
   
@@ -684,6 +682,7 @@ aside {
     }
     .quienes-somos {
         height: auto;
+        width: 90%;
     }
     .slideshow-container {
         min-width: -webkit-fill-available;
