@@ -45,7 +45,7 @@ function navbarResponsive() {
     }
 
     function onscrollStyles(){
-        navbarImg.style.maxHeight = window.scrollY > 80 ? "56px" : "170px";
+        navbarImg.style.maxHeight = window.scrollY > 80 ? "56px" : "90px";
         header.style.boxShadow = window.scrollY > 120 ? "2px 2px 10px gray" : "none";
     }
 
