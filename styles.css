@@ -601,6 +601,9 @@ aside {
 /*-----------------------      RESPONSIVE STYLES     -----------------------*/
 
 @media only screen  and (max-width: 800px) {
+    p {
+        font-size: 1rem;
+    }
     .header {
         justify-content: space-between;
         padding: 1rem;
@@ -713,6 +716,13 @@ aside {
     aside > p {
         margin: 0;
         padding: 0.5rem;
+        line-height: 1.2;
+    }
+    article > div > p {
+        font-size: smaller;
+    }
+    article > div > h3 {
+        font-size: 1.2rem;
     }
     .media-section {
         display: none;
