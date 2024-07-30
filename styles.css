@@ -120,7 +120,7 @@ ul li a {
 #nav-wrap-container ul li {
     display: inline-block;
     position: relative;
-    margin-right: 0.5rem;
+    /*margin-right: 0.5rem;*/
     z-index: 1;
 }
 
@@ -351,7 +351,7 @@ ul li a {
 
 .media-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: fit-content;
     padding: 5%;
     margin: 0px 3rem;
