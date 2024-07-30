@@ -389,8 +389,6 @@ footer {
 
 #social-media .fa-brands:hover {
     opacity: 1;
-    background: linear-gradient(#e66465, #9198e5);
-    overflow: hidden;
 }
 
 
@@ -632,6 +630,7 @@ aside {
         color: white;
         display: inline-block;
         width: 100%;
+        margin-right: 1rem;
     }
 
     #nav-wrap-container ul li {
