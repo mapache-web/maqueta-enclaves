@@ -16,9 +16,9 @@
 <div id="wrapper" class="wrapper">
     <header class="header" id="header">
         <div class="logo" id="logo"><img src="./assets/logo-enclaves.png"></div>
-            <div id="icono-menu" class="icono-menu">
-                <i class="fa-solid fa-bars fa-2xl"></i>
-            </div>
+        <div id="icono-menu" class="icono-menu">
+        <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
         <nav id="navbar">
             <div id="nav-wrap-container">
                 <div id="cerrar-menu" class="icono-cerrar-menu">
@@ -69,60 +69,60 @@
     </header>
         <div class="slideshow-container">
             <div class="mySlides fade">
-            <img class="desktop-only" src="./assets/slide-1.png" style="width:100%">
-            <img class="mobile-only" src="./assets/slide-1-m.png" style="width:100%">
+                <img class="desktop-only" src="./assets/slide-1.png" style="width:100%">
+                <img class="mobile-only" src="./assets/slide-1-m.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-            <img class="desktop-only" src="./assets/slide-2.png" style="width:100%">
-            <img class="mobile-only" src="./assets/slide-2-m.png" style="width:100%">
+                <img class="desktop-only" src="./assets/slide-2.png" style="width:100%">
+                <img class="mobile-only" src="./assets/slide-2-m.png" style="width:100%">
             </div>
         
             <div class="mySlides fade">
-            <img class="desktop-only" src="./assets/slide-3.png" style="width:100%">
-            <img class="mobile-only" src="./assets/slide-3-m.png" style="width:100%">
+                <img class="desktop-only" src="./assets/slide-3.png" style="width:100%">
+                <img class="mobile-only" src="./assets/slide-3-m.png" style="width:100%">
             </div>
         
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
         
-            </div>
+        </div>
             <br>
         
-            <div style="text-align:center">
+        <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span> 
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
+        </div>
 
-<script>  
-let slideIndex = 1;
-showSlides(slideIndex);
+    <script>  
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
+    for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script> 
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+    </script> 
     <div class="container">
         <div class="card main-post">
             <img src="https://soberaniasanitaria.org.ar/wp-content/uploads/2024/06/Narratively-01-1320x500.jpg"
@@ -166,21 +166,20 @@ function showSlides(n) {
             </div>
         </div>
     </div>
-</div>
 
-<section class="media-section"> 
-<div class="media-container">
-    <div class="other-media">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YHjyMRYFkuc?si=7fWgId2ufMu3HRBo" 
+    <section class="media-section"> 
+    <div class="media-container">
+        <div class="other-media">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YHjyMRYFkuc?si=7fWgId2ufMu3HRBo" 
         title="YouTube video player" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <div class="other-media"></div>
-</div> 
-</section>
-<div id="contacto" class="seccion-contacto">
+        </div>
+        <div class="other-media"></div>
+    </div> 
+    </section>
+    <div id="contacto" class="seccion-contacto">
     <div class="contacto-container">
         <div class="contacto-mail">
             <div class="contacto-titulo">
@@ -220,23 +219,23 @@ function showSlides(n) {
                         Enviar
                     </button>
                 </fieldset>
+                </form>
             </form>
-        </form>
-    </div>
-    <div class="contacto-seccion-ubicacion">
+        </div>
+        <div class="contacto-seccion-ubicacion">
 
+        </div>
     </div>
-</div>
-<footer>
-    <div class="footer-inner">
-    </div>
-    <div id="social-media">
-        <a href="https://www.facebook.com/EnclavesAC/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/enclaves_ac/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://www.youtube.com/@enclaves_ac"><i class="fa-brands fa-youtube"></i></a>
-    </div>
-</footer>
-<script src="script.js"></script>
+    <footer>
+        <div class="footer-inner">
+        </div>
+        <div id="social-media">
+            <a href="https://www.facebook.com/EnclavesAC/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/enclaves_ac/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.youtube.com/@enclaves_ac"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </div>
 </body>
 </html>
