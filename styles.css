@@ -372,23 +372,23 @@ footer {
     display: flex;
     justify-content: center;
     background: var(--logo-blue);
+    padding: 0 3rem;
     
 }
 .footer-inner {
-    flex-basis: 50%;
+    flex-basis: 40%;
     color: var(--secondary);
     text-align: center;
     padding: 1rem;
+    opacity: 0.9;
 }
 
 #social-media {
     padding: 10px 0px;
     display: flex;
-    align-self: end;
-    justify-content: center;
-    width: 300px;
+    justify-content: space-evenly;
     float: right;
-    flex-basis: 50%;
+    flex-basis: 60%;
 }
 
 #social-media .fa-brands {
@@ -423,10 +423,15 @@ footer {
 .contacto-titulo{
     text-align: left;
     width: 100%;
+}
+.contacto-titulo > h3 {
     font-size: 1.3rem;
     font-weight: 600;
     padding-bottom: 2rem;
     font-family: var(--fuente-titulos);
+}
+.contacto-titulo > p {
+    width: 80%;
 }
 
 .contacto-mail,
@@ -437,7 +442,7 @@ footer {
 .contacto-formulario-titulo {
     color: var(--violet);
     display: block;
-    font-size: 30px;
+    font-size: 1.3rem;
     font-weight: 400;
     font-family: var(--fuente-titulos);
 }
@@ -775,9 +780,28 @@ aside {
     }
     footer {
         flex-direction: column-reverse;
+        padding: 0;
+    }
+    .footer-inner {
+        padding: 0 0 0.7rem 0;
+    }
+    .seccion-contacto {
+        padding: 3rem 1.5rem 1rem 1.5rem;
+    }
+    .contacto-titulo > p {
+        font-size: smaller!important;
+        width: 100%;
+    }
+    .contacto-titulo > h3 {
+        padding-bottom: 1.3rem;
+    }
+    .contacto-email-link {
+        padding-top: 0px;
+    }
+    .contacto-email-link a p {
+        padding: 15px 15px;
     }
     #social-media {
-        padding-top: 1rem;
         justify-content: space-evenly;
         width: 100%;
     }
