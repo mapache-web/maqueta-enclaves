@@ -209,7 +209,7 @@ search > form > button[type="submit"]:hover {
 /* NEW SLIDE */
 .slideshow-container {
     position: relative;
-    width: 1400px;
+    width: 100%;
     margin: auto;
     height: 400px;
     transition: .5s;
