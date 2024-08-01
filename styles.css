@@ -6,6 +6,7 @@
     --green: #448EBD;
     --gray: #939598;
     --logo-gray : #606060;
+    --logo-blue: #4361a1;
     --webkit-box-sizing:border-box;
     --moz-box-sizing:border-box;
     --webkit-font-smoothing:antialiased;
@@ -368,27 +369,33 @@ search > form > button[type="submit"]:hover {
 
 
 footer {
-    height: 70px;
-    padding: 10px;
     display: flex;
     justify-content: center;
-    background: var(--primary);
+    background: var(--logo-blue);
     
+}
+.footer-inner {
+    flex-basis: 50%;
+    color: var(--secondary);
+    text-align: center;
+    padding: 1rem;
 }
 
 #social-media {
     padding: 10px 0px;
     display: flex;
     align-self: end;
-    justify-content: space-between;
+    justify-content: center;
     width: 300px;
     float: right;
+    flex-basis: 50%;
 }
 
 #social-media .fa-brands {
     color: var(--secondary);
     opacity: 0.8;
-    font-size: 2.3rem;
+    font-size: 1.7rem;
+    margin: 0 1rem;
 }
 
 #social-media .fa-brands:hover {
@@ -410,7 +417,7 @@ footer {
 
 .contacto-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .contacto-titulo{
@@ -427,7 +434,6 @@ footer {
     display: block;
     width: 40%;
 }
-
 .contacto-formulario-titulo {
     color: var(--violet);
     display: block;
@@ -536,7 +542,7 @@ input{
 
 .contacto-email-link a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 1.5px;
 }
@@ -659,13 +665,13 @@ aside {
       }
       
       #nav-wrap-container .dropdown-menu li a {
-        color: var(--logo-gray); /* Asegúrate de que var(--secondary) es el color correcto */
+        color: var(--logo-gray); 
       }
       
       #nav-wrap-container .dropdown-menu li a:hover {
         color: var(--secondary);
-        background-color: var(--green); /* Asegúrate de que var(--primary) es el color correcto */
-        /* Otros estilos */
+        background-color: var(--green); 
+        
       }
       .wrapper .wrapper-opacity {
         opacity: 0.4;
@@ -766,6 +772,14 @@ aside {
     }
     .desktop-only {
         display: none;
+    }
+    footer {
+        flex-direction: column-reverse;
+    }
+    #social-media {
+        padding-top: 1rem;
+        justify-content: space-evenly;
+        width: 100%;
     }
 }
 
