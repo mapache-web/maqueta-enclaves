@@ -211,7 +211,7 @@ search > form > button[type="submit"]:hover {
     position: relative;
     width: 100%;
     margin: auto;
-    height: 400px;
+    height: auto;
     transition: .5s;
     overflow: hidden;
     margin-top: 150px; 
